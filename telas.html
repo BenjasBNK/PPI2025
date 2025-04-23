@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=di, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{ min-height: 100svh; background-color: grey;
+        display:grid;
+
+
+    }
+    .box{border: 1px solid black;}
+    #box1{grid-area:cabecario}
+    #box2{grid-area:menu}
+    #box3{grid-area:principal}
+    #box4{grid-area:aside}
+    #box5{grid-area:rodepe}
+    @media screen and (max-width: 600px){
+        body{
+        grid-template-areas: 
+        "cabecario"
+        "menu"
+        "principal"
+        "aside"
+        "rodape";       
+        }
+    }
+    @media screen and (min-width: 600px) and (max-width: 900px){
+        body{
+        background-color: crimson;
+        grid-template-areas: 
+        "cabecario cabecario"
+        "menu principal"
+        "aside aside"
+        "rodape rodape";       
+        }
+    }
+    @media screen and (min-width: 900px){
+        body{
+        background-color: plum;
+        grid-template-areas: 
+        "cabecario cabecario cabecario"
+        "menu principal aside"
+        "rodape rodape rodape";       
+        }
+    }
+
+
+</style>
+<body>
+    <div class="box" id="box1">cabecario</div>
+    <div class="box" id="box2">menu</div>
+    <div class="box" id="box3">principal</div>
+    <div class="box" id="box4">aside</div>
+    <div class="box" id="box5">rodape</div>
+</body>
+</html>
