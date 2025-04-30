@@ -1,0 +1,12 @@
+1- nao me lembro
+
+2- a frase esta sem coerência, pois CSS é um linguagem de estilo, utilizada como uma ferramenta junto ao codigo html e o javascript é um linguagem para interatividade com a tela, 
+já o java é de uso geral.
+
+3-Regra css é a forma de instrução para os elemento no codigo html, utilizando um seletor para se refirir a um objeto especifico, assim aplicando a regra ao elemento selecionado:
+
+h1{
+ color: blue;
+}
+
+"h1" seria o seletor do elemento html, ja o "color" é um bloco de seleção para a modifição do elemento html.
