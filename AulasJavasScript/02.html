@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*faça um programa que solicite ao ususario um numero, usando prompt e em seguida Faça a contagem até esse numero, imprimindo cada elemento no console */
+        let a = Number(prompt("escreva um numero"))
+        
+        let i= 0
+        for(i= 0; i <=a; i++) {
+            console.log(i)
+        }
+
+        /*Adicione um elemneto de listagem(ul) ao body e adicione cada numero, de contagem, a um item <li>*/ 
+        let Ul = document.createElement("ul")
+        Ul.style.display="flex"
+
+
+
+        document.body.appendChild(Ul)
+        for(i= 0; i <a; i++) {
+            item=document.createElement("li")
+            item.innerHTML=i
+            item.id="n" +i
+            Ul.appendChild(item);
+            if(i%2==0){
+                item.style.backgroundColor = "#FFFF00"
+            }
+        }
+        /* altere a cor de fundo para vermelho, dos items contendo numeros pares*/ 
+
+        
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
