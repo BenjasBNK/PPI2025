@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Número Aleatorio</h1>
+    
+    <button id="button">Clica nim mim papai</button>
+    <p id="NRand"></p>
+
+    <script>
+        let button=document.querySelector("#button")
+        button.addEventListener("click", ()=>{
+            let r = Math.trunc(Math.random() * 100)
+            button.innerHTML= r
+        })
+        
+           
+    </script>
+</body>
+</html>
