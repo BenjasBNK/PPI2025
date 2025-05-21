@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> O que é JavaScript?</title>
+</head>
+
+<body>
+    <h1 id="Titulo"> O que é JavaScript?</h1>
+    <h2 id="1p">A motivação para a criação do JavaScript</h2>
+    <p id="1r">JavaScript foi criado em para tornar a web interativa. como uma concorrencia ao java, sendo mais acessivel e mais facil de se usar.</p>
+    <h2 id="2p">A diferença entre execução no navegador e no servidor?</h2>
+    <h2 id="3p">O conceito de sandbox no navegador?</h2>
+    <p id="3r">O sandbox no navegador é um mecanismo de segurança que isola processos para evitar que sites maliciosos hackeam o sistema </p>
+
+    <h2 id="4p">Objetos globais como document, console e alert</h2>
+    <p id="4r">o document manipula elementos da página HTML, o console Exibe mensagens para depuração, o alert Mostra avisos para o usuário, o Math Oferece funções matemáticas como arredondamento e aleatoriedade, o Date Manipula datas e horários</p>
+    
+    <p id="Hora">Horas:</p>
+    <script>
+         
+        console.log("Opa")
+        alert("Queijo Quente")
+
+        document.getElementById("Hora").innerHTML += new Date().toLocaleTimeString();
+
+
+    </script>
+
+
+</body>
+</html>

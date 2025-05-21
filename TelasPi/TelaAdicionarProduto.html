@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        border: 1px solid black ;
+        width: 800px;
+        height: 500px;
+    }
+      
+        #box1{grid-area:cabecario}
+        #box2{grid-area:menu}
+        #box3{grid-area:principal}
+        #box4{grid-area:aside}
+        #box5{grid-area:rodepe}
+          
+        @media screen and (max-width: 800px){
+        body{
+        grid-template-areas: 
+        "cabecario"
+        "menu"
+        "principal"
+        "aside"
+        "rodape";       
+        }
+    }    
+
+
+</style>
+<body>
+    <div class="container" id="container">
+         <div class="box" id="box1">Adcionar itens</div>
+         <div class="box" id="box2"></div>
+         <div class="box" id="box3"></div>
+
+         <div class="box" id="box4"></div>
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
