@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Variáveis em JavaScript</title>
+</head>
+<body>
+    <h1>Demonstrando Tipos e Operações em JavaScript</h1>
+    <button onclick="executarScript()">Executar Script</button>
+    
+    <p id="Pstring"></p>
+    <p id="Pnumero"></p>
+    <p id="Pboolean"></p>
+    <p id="PIndefinido"></p>
+    <p id="Pnulo"></p>
+    <p id="Pobjeto"></p>
+    <p id="Parray"></p>
+    
+    <h2>Operações entre tipos</h2>
+    <p id="Poperacoes"></p>
+
+    <script>
+        function executarScript() {
+            // Declarando variáveis de diferentes tipos
+            let texto = "Iae mano";
+            let numero = 777;
+            let booleano = true;
+            let indefinido;
+            let nulo = null;
+            let objeto = { nome: "Cadeira", material: "Madeira" };
+            let array = [96, 69, 1];
+
+            // Exibindo tipos das variáveis na página
+            Pstring.innerHTML = typeof(texto);
+            Pnumero.innerHTML = typeof(numero);
+            Pboolean.innerHTML = typeof(booleano);
+            PIndefinido.innerHTML = typeof(indefinido);
+            
+            if(nulo === null){
+                Pnulo.innerHTML = "nulo";
+            }
+
+            Pobjeto.innerHTML = typeof(objeto);
+
+            if(Array.isArray(array)){
+                Parray.innerHTML = "array";
+             }
+
+
+
+
+            let operacoes = [
+                [`String + Número: ${texto + numero}`, "O número é convertido para string e concatenado."],
+                [`Booleano * Número: ${booleano * numero}`, "O booleano é convertido para 1 (true) e multiplicado."],
+                [`Objeto + String: ${objeto + texto}`, "O objeto é convertido para string e concatenado."],
+                [`Array + Número: ${array + numero}`, "O array é convertido para string e concatenado."],
+                [`Indefinido + Número: ${indefinido + numero}`, "Operação resulta em NaN (Not a Number)."]
+            ];
+            let resultadoOperacoes = operacoes.map(op => `${op[0]} - Explicação: ${op[1]}`).join("\n");
+
+            document.getElementById("Poperacoes").innerText = resultadoOperacoes;
+
+            console.log(resultadoOperacoes);    
+
+            
+        }
+    </script>
+</body>
+</html>
