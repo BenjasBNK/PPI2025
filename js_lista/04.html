@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        body{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100vh;
+        }
+        button{
+            padding: 100px;
+        }
+</style>
+</head>
+<body>
+    <h1>Numero Aleatorio</h1>
+    <button id="button"> clica em mim</button>
+    <script>
+        let button=document.querySelector("#button");
+        button.addEventListener("click", ()=>{
+            let i = math.trunc(Math.random()*100)
+        
+
+            button.innerHTML= i;
+            
+        })
+    </script>
+    
+
+</body>
+</html>

@@ -1,42 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="2.php">
-    <input type="color" name = "cor">
-    <input type="number" name="A" >
+<form action="2.php">
+    <input type="color" name ="cor">
+    <input type="numer" name="A">
+    <input type="numer" name="B">
 
-    <input type="number" name="B" >
-    
     <input type="submit">
+</form>
 
-
-
-
-
-
-
-    </form>
 <?php
-    $A= 0;
-    $B= 0;
-    /*Programa que imprime soma de dois numeros informados pelo ususrio via get*/
-    if (isset($_GET["A"])){
-        $A = $_GET["A"];
-        
-    }
-    if (isset($_GET["A"])){
-        $B = $_GET["B"];
+/* programa que imprime a soma de dois bnumeros informados pelo usuario via get */
 
-    }
-    echo "A soma de e b é =  ";
-    echo $A."+".$B. "=". $A+$B;
+/* verificar se um 0parametro foi passado */
+$A = 0;
+$B = 0;
+
+if (isset ($_GET["A"])){
+    $A = $_GET["A"];
+}if (isset($_GET["B"])){
+    $B = $_GET["B"];
+}
 
 
 
-    ?>
-</html>
+echo "A soma a e b é = ";
+echo $A. "+" .$B. "=".$A+$B;
+
+
+?>
